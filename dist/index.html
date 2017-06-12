@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Up</title>
-<link href="./css/commons.css?927f2321dcd9049fdca4" rel="stylesheet"><link href="./css/app.css?927f2321dcd9049fdca4" rel="stylesheet"></head>
+<link href="./css/commons.css?ad1fdcdec38c3c6b3938" rel="stylesheet"><link href="./css/app.css?ad1fdcdec38c3c6b3938" rel="stylesheet"></head>
 <body ng-app="app" ng-strict-di>
     <div>
         <h4>Up</h4>
         <up></up>
+        <hr />
         <up>
             <a href="#" class="btn" up-btn multiple >Select image</a>
             <div class="up-img" ng-hide="files.length">
@@ -18,14 +19,19 @@
             </div>
             <div>
                 <div ng-repeat="file in files" up-img="file" />
-<!--
-                <div class="up-img" ng-repeat="file in files">
-                    <a href="#" class="up-btn" up-clear="{{$index}}" ng-show="files.length">remove image</a>
-                    <img up-img="file" ng-show="files.length" width="100"/>
-                </div>
--->
+            </div>
+        </up>
+        <hr />
+        <up>
+            <div class="up-img" ng-hide="files.length" up-btn>
+                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" />
+            </div>
+            <div class="up-img" ng-show="externalFile && !files.length" up-btn>
+                <img ng-src="{{externalFile}}" />
+            </div>
+            <div ng-show="files.length" up-img="files[0]" up-btn/>
             </div>
         </up>
     </div>
-<script type="text/javascript" src="./js/manifest.js?927f2321dcd9049fdca4"></script><script type="text/javascript" src="./js/commons.js?927f2321dcd9049fdca4"></script><script type="text/javascript" src="js/app.js?927f2321dcd9049fdca4"></script></body>
+<script type="text/javascript" src="./js/manifest.js?ad1fdcdec38c3c6b3938"></script><script type="text/javascript" src="./js/commons.js?ad1fdcdec38c3c6b3938"></script><script type="text/javascript" src="js/app.js?ad1fdcdec38c3c6b3938"></script></body>
 </html>

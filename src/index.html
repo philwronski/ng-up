@@ -8,6 +8,7 @@
     <div>
         <h4>Up</h4>
         <up></up>
+        <hr />
         <up>
             <a href="#" class="btn" up-btn multiple >Select image</a>
             <div class="up-img" ng-hide="files.length">
@@ -18,12 +19,17 @@
             </div>
             <div>
                 <div ng-repeat="file in files" up-img="file" />
-<!--
-                <div class="up-img" ng-repeat="file in files">
-                    <a href="#" class="up-btn" up-clear="{{$index}}" ng-show="files.length">remove image</a>
-                    <img up-img="file" ng-show="files.length" width="100"/>
-                </div>
--->
+            </div>
+        </up>
+        <hr />
+        <up>
+            <div class="up-img" ng-hide="files.length" up-btn>
+                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" />
+            </div>
+            <div class="up-img" ng-show="externalFile && !files.length" up-btn>
+                <img ng-src="{{externalFile}}" />
+            </div>
+            <div ng-show="files.length" up-img="files[0]" up-btn/>
             </div>
         </up>
     </div>
