@@ -1,4 +1,6 @@
 <div class="up-img">
-    <a href="#" class="up-btn" up-clear="{{$index}}" ng-show="files.length">remove image</a>
-    <img ng-show="files.length" width="100"/>
+    <a href="#" class="up-btn" up-clear="{{$index}}" ng-show="file">remove image</a>
+    <img ng-if="isImg" ng-show="file" width="100"/>
+    <img ng-if="!isImg" ng-show="file" ng-src="images/file-{{fileType}}.png" width="100"/>
+    <span ng-if="!isImg">{{file.name}}</span>
 </div>

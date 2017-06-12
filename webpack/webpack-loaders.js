@@ -24,7 +24,7 @@ module.exports = [
         exclude: /vendor/,
         use: [
             { loader: 'style-loader/url' },
-            { loader: 'file-loader?name=dist/css/[name].[ext]'},
+            { loader: 'file-loader?name=css/[name].[ext]'},
         ]
     },
     // ??
@@ -79,7 +79,7 @@ module.exports = [
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [
             { loader: 'url-loader?limit=10000&mimetype=application/font-woff'},
-            { loader: 'file-loader?name=dist/css/fonts/[name].[ext]' }
+            { loader: 'file-loader?name=css/fonts/[name].[ext]' }
         ]
     },
     // Copy all other font files into dist directory.
@@ -94,6 +94,6 @@ module.exports = [
         // Add image into require.
 //        loader: 'url-loader'
         // Add image into dist directory
-        loader: 'file-loader?name=dist/images/[name].[ext]'
+        loader: 'file-loader?name=images/[name].[ext]'
     }
 ];

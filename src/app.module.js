@@ -15,6 +15,10 @@ import './scss/up.scss';
 
 //import bootstrap from 'bootstrap';
 
+import './images/file-txt.png';
+import './images/file-pdf.png';
+import './images/file-doc.png';
+
 angular
     .module('app', [])
     .constant('UPLOAD', upload)

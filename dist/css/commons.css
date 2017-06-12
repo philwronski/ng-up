@@ -239,7 +239,7 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url(../css/fonts/glyphicons-halflings-regular.eot);
-  src: url(../css/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(data:application/font-woff;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJkaXN0L2Nzcy9mb250cy9nbHlwaGljb25zLWhhbGZsaW5ncy1yZWd1bGFyLndvZmYyIjs=) format("woff2"), url(data:application/font-woff;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJkaXN0L2Nzcy9mb250cy9nbHlwaGljb25zLWhhbGZsaW5ncy1yZWd1bGFyLndvZmYiOw==) format("woff"), url(../css/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../css/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg"); }
+  src: url(../css/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(data:application/font-woff;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJjc3MvZm9udHMvZ2x5cGhpY29ucy1oYWxmbGluZ3MtcmVndWxhci53b2ZmMiI7) format("woff2"), url(data:application/font-woff;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJjc3MvZm9udHMvZ2x5cGhpY29ucy1oYWxmbGluZ3MtcmVndWxhci53b2ZmIjs=) format("woff"), url(../css/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../css/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg"); }
 
 .glyphicon {
   position: relative;
