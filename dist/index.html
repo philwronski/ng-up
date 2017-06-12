@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Up</title>
+<link href="./css/commons.css?003dc9635f4b1ae594c3" rel="stylesheet"><link href="./css/app.css?003dc9635f4b1ae594c3" rel="stylesheet"></head>
+<body ng-app="app" ng-strict-di>
+    <div>
+        <h4>Up</h4>
+        <up></up>
+        <up>
+            <a href="#" class="btn" up-btn multiple>Select image</a>
+            <div class="up-img" ng-hide="files.length">
+                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" />
+            </div>
+            <div class="up-img" ng-show="externalFile && !files.length">
+                <img ng-src="{{externalFile}}" />
+            </div>
+            <div>
+                <div ng-repeat="file in files" up-img="file" />
+<!--
+                <div class="up-img" ng-repeat="file in files">
+                    <a href="#" class="up-btn" up-clear="{{$index}}" ng-show="files.length">remove image</a>
+                    <img up-img="file" ng-show="files.length" width="100"/>
+                </div>
+-->
+            </div>
+        </up>
+    </div>
+<script type="text/javascript" src="./js/manifest.js?003dc9635f4b1ae594c3"></script><script type="text/javascript" src="./js/commons.js?003dc9635f4b1ae594c3"></script><script type="text/javascript" src="js/app.js?003dc9635f4b1ae594c3"></script></body>
+</html>

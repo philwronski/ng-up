@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Up</title>
+</head>
+<body ng-app="app" ng-strict-di>
+    <div>
+        <h4>Up</h4>
+        <up></up>
+        <up>
+            <a href="#" class="btn" up-btn multiple>Select image</a>
+            <div class="up-img" ng-hide="files.length">
+                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" />
+            </div>
+            <div class="up-img" ng-show="externalFile && !files.length">
+                <img ng-src="{{externalFile}}" />
+            </div>
+            <div>
+                <div ng-repeat="file in files" up-img="file" />
+<!--
+                <div class="up-img" ng-repeat="file in files">
+                    <a href="#" class="up-btn" up-clear="{{$index}}" ng-show="files.length">remove image</a>
+                    <img up-img="file" ng-show="files.length" width="100"/>
+                </div>
+-->
+            </div>
+        </up>
+    </div>
+</body>
+</html>

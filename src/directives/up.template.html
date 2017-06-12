@@ -1,0 +1,18 @@
+<div ng-transclude class="up">
+    <a href="#" class="btn" up-btn>Select image</a>
+    <!--    <a href="#" class="btn" up-clear="0">remove image</a>-->
+    <div class="up-img" ng-hide="files.length">
+        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" />
+    </div>
+    <!--    <img up-img="files[0]" ng-show="files.length"/>-->
+    <div class="up-img" ng-show="externalFile && !files.length">
+        <img ng-src="{{externalFile}}" />
+    </div>
+    <div up-img="files[0]" />
+<!--
+    <div class="up-img">
+        <a href="#" class="up-btn" up-clear="{{$index}}" ng-show="files.length">remove image</a>
+        <img up-img="files[0]" ng-show="files.length" width="100"/>
+    </div>
+-->
+</div>
